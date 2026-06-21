@@ -1,0 +1,202 @@
+.packages-page {
+  width: 100%;
+  padding: 100px 5% 80px;
+  background: #ffffff;
+  min-height: calc(100vh - 80px);
+}
+
+.packages-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.packages-container h1 {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.packages-subtitle {
+  max-width: 800px;
+  margin: 0 auto 70px;
+  text-align: center;
+  color: #6b7280;
+  line-height: 1.8;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.package-card {
+  background: #f8fafc;
+  padding: 40px 30px;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  position: relative;
+  transition: 0.3s;
+}
+
+.package-card:hover {
+  transform: translateY(-8px);
+}
+
+.package-card--highlighted {
+  background: white;
+  border: 2px solid #1e2d47;
+  transform: scale(1.02);
+}
+
+.package-card--highlighted:hover {
+  transform: scale(1.02) translateY(-8px);
+}
+
+.package-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1e2d47;
+  color: white;
+  padding: 6px 20px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.package-card h2 {
+  text-align: center;
+  color: #1e2d47;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+.package-card ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.package-card li {
+  padding: 12px 0;
+  color: #4b5563;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.package-btn {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  border: none;
+  background: #1e2d47;
+  color: white;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.package-btn:hover {
+  background: #152033;
+}
+
+.comparison-section {
+  margin-bottom: 80px;
+}
+
+.comparison-section h2,
+.faq-section h2 {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: #1f2937;
+  margin-bottom: 40px;
+}
+
+.comparison-table-wrapper {
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #f8fafc;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 18px 20px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.comparison-table th {
+  background: #1e2d47;
+  color: white;
+  font-weight: 600;
+}
+
+.comparison-table td:first-child {
+  text-align: left;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.comparison-table td {
+  color: #4b5563;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.faq-card {
+  background: #f8fafc;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.faq-card h3 {
+  color: #1e2d47;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.faq-card p {
+  color: #6b7280;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .packages-page {
+    padding: 90px 5% 60px;
+  }
+
+  .package-card--highlighted {
+    transform: none;
+  }
+
+  .package-card--highlighted:hover {
+    transform: translateY(-8px);
+  }
+
+  .comparison-table {
+    font-size: 0.9rem;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 12px 10px;
+  }
+}

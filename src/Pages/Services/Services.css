@@ -1,0 +1,79 @@
+.services-page {
+  width: 100%;
+  padding: 100px 5% 80px;
+  background: #ffffff;
+  min-height: calc(100vh - 80px);
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-container h1 {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.services-subtitle {
+  max-width: 800px;
+  margin: 0 auto 70px;
+  text-align: center;
+  color: #6b7280;
+  line-height: 1.8;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: #f8fafc;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.service-card h2 {
+  color: #1e2d47;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.service-card p {
+  color: #6b7280;
+  line-height: 1.8;
+}
+
+.services-cta {
+  text-align: center;
+  margin-top: 70px;
+  padding: 50px;
+  background: #f8fafc;
+  border-radius: 20px;
+}
+
+.services-cta p {
+  color: #4b5563;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .services-page {
+    padding: 90px 5% 60px;
+  }
+
+  .services-cta {
+    padding: 35px 25px;
+  }
+}

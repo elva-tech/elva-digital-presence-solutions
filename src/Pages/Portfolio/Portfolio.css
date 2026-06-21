@@ -1,0 +1,152 @@
+.portfolio-page {
+  width: 100%;
+  padding: 100px 5% 80px;
+  background: #ffffff;
+  min-height: calc(100vh - 80px);
+}
+
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio-container h1 {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.portfolio-subtitle {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+  color: #6b7280;
+  line-height: 1.8;
+}
+
+.portfolio-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.filter-tag {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  background: #f7f7f7;
+  color: #4b5563;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.portfolio-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #555555;
+  padding: 40px 20px;
+}
+
+.filter-tag--active,
+.filter-tag:hover {
+  background: #1e2d47;
+  color: white;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.portfolio-card {
+  background: #f8fafc;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.portfolio-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-8px);
+}
+
+.portfolio-image-placeholder {
+  height: 200px;
+  background: linear-gradient(135deg, #1e2d47, #2a3f5f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-image-placeholder span {
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+}
+
+.portfolio-info {
+  padding: 30px;
+}
+
+.portfolio-category {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #1e2d47;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.portfolio-info h2 {
+  color: #1e2d47;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.portfolio-info p {
+  color: #6b7280;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.portfolio-cta {
+  text-align: center;
+  margin-top: 70px;
+  padding: 50px;
+  background: #f8fafc;
+  border-radius: 20px;
+}
+
+.portfolio-cta p {
+  color: #4b5563;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .portfolio-page {
+    padding: 90px 5% 60px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
