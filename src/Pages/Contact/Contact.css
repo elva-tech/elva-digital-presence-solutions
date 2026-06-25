@@ -47,12 +47,12 @@
 
 .info-icon {
   font-size: 1.5rem;
-  color: #1e2d47;
+  color: var(--color-primary);
   margin-bottom: 10px;
 }
 
 .info-card h2 {
-  color: #1e2d47;
+  color: var(--color-primary);
   margin-bottom: 8px;
   font-size: 1.1rem;
 }
@@ -92,7 +92,7 @@
 }
 
 .map-placeholder p {
-  color: #1e2d47;
+  color: var(--color-primary);
   font-weight: 600;
   margin-bottom: 8px;
 }
@@ -113,7 +113,7 @@
 }
 
 .contact-form h2 {
-  color: #1e2d47;
+  color: var(--color-primary);
   font-size: 1.5rem;
   margin-bottom: 0;
 }
@@ -142,7 +142,7 @@
 .contact-form input:focus,
 .contact-form textarea:focus,
 .contact-form select:focus {
-  border-color: #1e2d47;
+  border-color: var(--color-primary);
 }
 
 .contact-form select {
@@ -156,7 +156,7 @@
 .contact-form button {
   border: none;
   padding: 16px;
-  background: #1e2d47;
+  background: var(--color-primary);
   color: white;
   font-size: 1rem;
   font-weight: 600;
@@ -167,7 +167,7 @@
 }
 
 .contact-form button:hover {
-  background: #152033;
+  background: var(--color-primary-dark);
 }
 
 @media (max-width: 900px) {

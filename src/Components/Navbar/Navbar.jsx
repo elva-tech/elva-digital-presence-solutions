@@ -44,6 +44,10 @@ function Navbar() {
         <li><Link to="/contact" className={navClass("/contact")} onClick={closeMenu}>Contact Us</Link></li>
       </ul>
 
+      <Link to="/contact" className="nav-cta" onClick={closeMenu}>
+        Get Started
+      </Link>
+
       <button
         type="button"
         className="menu-icon"

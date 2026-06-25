@@ -45,7 +45,7 @@
 }
 
 .industry-card h2 {
-  color: #1e2d47;
+  color: var(--color-primary);
   font-size: 1.4rem;
   margin-bottom: 15px;
 }
@@ -65,7 +65,7 @@
 }
 
 .industry-example strong {
-  color: #1e2d47;
+  color: var(--color-primary);
 }
 
 @media (max-width: 768px) {

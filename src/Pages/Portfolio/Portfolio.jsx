@@ -19,7 +19,7 @@ const portfolioItems = [
   {
     title: "ELVA",
     category: "Customer Website",
-    description: "Digital presence platform helping local businesses grow online.",
+    description: "Website factory helping local businesses grow online.",
     url: "https://www.elvatech.in/",
   },
   {

@@ -1,59 +1,84 @@
 import { Link } from "react-router-dom";
 import "./Home.css";
 
+const heroFeatures = [
+  "Mobile Friendly",
+  "WhatsApp Integration",
+  "Google Maps",
+  "Fast Delivery",
+  "Affordable Pricing",
+];
+
 function Home() {
   return (
     <>
-      {/* Hero Section */}
       <section className="hero-section">
-        <div className="floating-shapes">
-          <div className="shape circle"></div>
-          <div className="shape square"></div>
-          <div className="shape triangle"></div>
-          <div className="shape hexagon"></div>
-          <div className="shape circle small"></div>
-          <div className="shape square medium"></div>
-          <div className="shape triangle large"></div>
-          <div className="shape hexagon small"></div>
-        </div>
+        <div className="hero-bg-glow hero-bg-glow--left" />
+        <div className="hero-bg-glow hero-bg-glow--right" />
 
-        <div className="hero-overlay">
-          <span className="hero-badge">ELVA Digital Presence Solutions</span>
+        <div className="hero-container">
+          <span className="hero-badge">ELVA Website Factory</span>
 
           <h1 className="hero-title">
-            Build a Professional Website for Your Business
+            All-in-One Websites Powering
+            <span className="hero-title-accent"> Business Growth</span>
           </h1>
 
           <p className="hero-subtitle">
-            We help local businesses improve visibility, credibility, and
-            customer trust through modern websites.
+            Stay ahead with professional websites designed for tomorrow&apos;s
+            challenges — flexible solutions that adapt to your business needs.
           </p>
-
-          <div className="hero-features">
-            <span>Mobile Friendly</span>
-            <span>WhatsApp Integration</span>
-            <span>Google Maps Integration</span>
-            <span>Fast Delivery</span>
-            <span>Affordable Pricing</span>
-          </div>
 
           <div className="hero-buttons">
             <Link to="/contact" className="hero-cta">
-              Get Free Consultation
+              Get Started
             </Link>
             <Link to="/portfolio" className="hero-cta-secondary">
               View Portfolio
             </Link>
           </div>
+
+          <div className="hero-video-showcase">
+            <div className="video-frame">
+              <div className="video-frame-header">
+                <span className="video-dot video-dot--red" />
+                <span className="video-dot video-dot--yellow" />
+                <span className="video-dot video-dot--green" />
+                <span className="video-frame-title">elva — website preview</span>
+              </div>
+              <div className="video-frame-body">
+                <video
+                  className="hero-video"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  poster="/elva-logo.svg"
+                >
+                  <source src="/hero-demo.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+            <div className="video-glow-ring" />
+          </div>
+
+          <div className="hero-features">
+            {heroFeatures.map((feature) => (
+              <span key={feature}>{feature}</span>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Why Website Section */}
       <section className="page-section page-section--white why-section">
         <div className="container">
-          <h2 className="section-title">Why Your Business Needs a Website</h2>
+          <span className="section-label">Why Your Business Needs a Website</span>
+          <h2 className="section-title">
+            Simplicity meets excellence in every project
+          </h2>
           <p className="section-subtitle">
-            Your Business Deserves a Professional Online Presence
+            Your business deserves a professional online presence that builds
+            trust and drives real inquiries.
           </p>
 
           <div className="why-grid">
@@ -65,19 +90,15 @@ function Home() {
         </div>
       </section>
 
-      {/* Problems Section */}
       <section className="problems-section">
         <div className="container">
+          <span className="section-label">Common Challenges</span>
           <h2>Does Your Business Have These Problems?</h2>
 
           <div className="problems-grid">
-            <div className="problem-card">
-              Customers cannot find you online
-            </div>
+            <div className="problem-card">Customers cannot find you online</div>
             <div className="problem-card">No professional website</div>
-            <div className="problem-card">
-              Competitors look more credible
-            </div>
+            <div className="problem-card">Competitors look more credible</div>
             <div className="problem-card">No online inquiries</div>
             <div className="problem-card">Limited digital presence</div>
           </div>
@@ -97,15 +118,14 @@ function Home() {
         </div>
       </section>
 
-      {/* Solution Section */}
       <section className="solution-section">
         <div className="container">
-          <h2>Our Solution</h2>
+          <span className="section-label">Our Solution</span>
+          <h2>Built for global trade, designed for local businesses</h2>
 
           <p className="solution-text">
             ELVA builds professional business websites that help increase trust,
             improve visibility, generate inquiries, and improve credibility.
-            Stand out from competitors and create a strong online presence.
           </p>
 
           <div className="solution-grid">
@@ -117,9 +137,9 @@ function Home() {
         </div>
       </section>
 
-      {/* Services Preview */}
       <section className="page-section page-section--white services-preview">
         <div className="container">
+          <span className="section-label">What We Do</span>
           <h2 className="section-title">Our Services</h2>
           <p className="section-subtitle">
             Professional digital solutions tailored for local businesses
@@ -152,9 +172,9 @@ function Home() {
         </div>
       </section>
 
-      {/* Industries Preview */}
       <section className="page-section page-section--grey industries-preview">
         <div className="container">
+          <span className="section-label">Industries</span>
           <h2 className="section-title">Industries We Serve</h2>
 
           <div className="industries-tags">
@@ -183,9 +203,9 @@ function Home() {
         </div>
       </section>
 
-      {/* Process Section */}
       <section className="page-section page-section--white process-section">
         <div className="container">
+          <span className="section-label">How We Work</span>
           <h2 className="section-title">Our Process</h2>
           <p className="section-subtitle">
             From consultation to launch — a simple, transparent workflow
@@ -221,9 +241,9 @@ function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
       <section className="page-section page-section--grey testimonials-section">
         <div className="container">
+          <span className="section-label">Testimonials</span>
           <h2 className="section-title">What Our Clients Say</h2>
           <p className="section-subtitle">
             Customer reviews and success stories
@@ -232,23 +252,23 @@ function Home() {
           <div className="testimonials-grid">
             <div className="testimonial-card">
               <p>
-                "ELVA helped our clinic establish a professional online
+                &ldquo;ELVA helped our clinic establish a professional online
                 presence. We now receive inquiries every week through our
-                website."
+                website.&rdquo;
               </p>
               <span className="testimonial-author">— Clinic Owner</span>
             </div>
             <div className="testimonial-card">
               <p>
-                "Fast turnaround and excellent support. Our coaching center
-                website looks professional and works perfectly on mobile."
+                &ldquo;Fast turnaround and excellent support. Our coaching center
+                website looks professional and works perfectly on mobile.&rdquo;
               </p>
               <span className="testimonial-author">— Coaching Center Director</span>
             </div>
             <div className="testimonial-card">
               <p>
-                "Affordable pricing with personalized support. ELVA made the
-                entire process simple and stress-free for our business."
+                &ldquo;Affordable pricing with personalized support. ELVA made the
+                entire process simple and stress-free for our business.&rdquo;
               </p>
               <span className="testimonial-author">— Small Business Owner</span>
             </div>
@@ -256,13 +276,12 @@ function Home() {
         </div>
       </section>
 
-      {/* Final CTA */}
       <section className="cta-section">
         <div className="container">
           <h2>Ready to Build Your Online Presence?</h2>
-          <p>Get Started Today</p>
+          <p>Get started today with a free consultation</p>
           <Link to="/contact" className="hero-cta">
-            Get Free Consultation
+            Get Started
           </Link>
         </div>
       </section>

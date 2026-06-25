@@ -44,7 +44,7 @@
 }
 
 .service-card h2 {
-  color: #1e2d47;
+  color: var(--color-primary);
   margin-bottom: 20px;
   font-size: 1.5rem;
 }

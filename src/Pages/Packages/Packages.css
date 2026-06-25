@@ -47,7 +47,7 @@
 
 .package-card--highlighted {
   background: white;
-  border: 2px solid #1e2d47;
+  border: 2px solid var(--color-primary);
   transform: scale(1.02);
 }
 
@@ -60,7 +60,7 @@
   top: -12px;
   left: 50%;
   transform: translateX(-50%);
-  background: #1e2d47;
+  background: var(--color-primary);
   color: white;
   padding: 6px 20px;
   border-radius: 50px;
@@ -70,7 +70,7 @@
 
 .package-card h2 {
   text-align: center;
-  color: #1e2d47;
+  color: var(--color-primary);
   margin-bottom: 30px;
   font-size: 1.5rem;
 }
@@ -91,7 +91,7 @@
   width: 100%;
   padding: 16px;
   border: none;
-  background: #1e2d47;
+  background: var(--color-primary);
   color: white;
   border-radius: 10px;
   font-size: 1rem;
@@ -103,7 +103,7 @@
 }
 
 .package-btn:hover {
-  background: #152033;
+  background: var(--color-primary-dark);
 }
 
 .comparison-section {
@@ -138,7 +138,7 @@
 }
 
 .comparison-table th {
-  background: #1e2d47;
+  background: var(--color-primary);
   color: white;
   font-weight: 600;
 }
@@ -167,7 +167,7 @@
 }
 
 .faq-card h3 {
-  color: #1e2d47;
+  color: var(--color-primary);
   font-size: 1.1rem;
   margin-bottom: 12px;
 }

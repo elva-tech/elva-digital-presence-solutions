@@ -6,7 +6,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-brand">
-          <h2>ELVA Digital Presence Solutions</h2>
+          <h2>ELVA Website Factory</h2>
           <p className="footer-tagline">
             Your Business Deserves a Professional Online Presence
           </p>
@@ -48,7 +48,7 @@ function Footer() {
         </div>
 
         <p className="copyright">
-          © 2026 ELVA Digital Presence Solutions. All Rights Reserved.
+          © 2026 ELVA Website Factory. All Rights Reserved.
         </p>
       </div>
     </footer>
