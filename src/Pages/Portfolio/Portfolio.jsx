@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Portfolio.css";
 
+const PORTFOLIO_IMAGE = "/portfolio-placeholder.png";
+
 const portfolioItems = [
   {
     title: "THE GILL EXIM",
@@ -82,8 +84,8 @@ function Portfolio() {
                 rel="noopener noreferrer"
                 className="portfolio-card portfolio-card-link"
               >
-                <div className="portfolio-image-placeholder">
-                  <span>{item.category}</span>
+                <div className="portfolio-image">
+                  <img src={PORTFOLIO_IMAGE} alt={item.title} />
                 </div>
                 <div className="portfolio-info">
                   <span className="portfolio-category">{item.category}</span>
