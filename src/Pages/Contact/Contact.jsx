@@ -30,18 +30,6 @@ function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Thank you! We will get back to you shortly.");
-    setFormData({
-      name: "",
-      phone: "",
-      businessName: "",
-      city: "",
-      industry: "",
-      message: "",
-    });
-  };
 
   return (
     <section className="contact-page">
@@ -92,7 +80,29 @@ function Contact() {
             </div>
           </div>
 
-          <form className="contact-form" onSubmit={handleSubmit}>
+          <form
+            className="contact-form"
+            action="https://formsubmit.co/vitheshb2003@gmail.com"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="New ELVA Website Inquiry"
+            />
+
+            <input
+              type="hidden"
+              name="_captcha"
+              value="false"
+            />
+
+            <input
+              type="hidden"
+              name="_template"
+              value="table"
+            />
+
             <h2>Get Free Consultation</h2>
             <p className="form-desc">
               Fill in your details and we&apos;ll get back to you shortly.
